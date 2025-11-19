@@ -15,6 +15,7 @@ app.include_router(items.router)
 app.include_router(orders.router)
 app.include_router(categories.router)
 
+# root
 @app.get("/")
 def root():
     return {
